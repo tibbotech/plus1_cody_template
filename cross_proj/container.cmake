@@ -8,9 +8,8 @@ endif()
 # Set up cross compilation
 set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_SYSTEM_PROCESSOR arm)
-
 #set paths to locations in image. 
-set (CHROOT_PATH  /root/disk/)
+set (CHROOT_PATH  ${PROJECT_SOURCE_DIR}/../../disk)
 set (CHROOT_INCLUDE_PATHS ${CHROOT_PATH}/usr/include/
                           ${CHROOT_PATH}/usr/include/ntios)
 set (CHROOT_LIB_PATHS     ${CHROOT_PATH}/usr/lib/arm-linux-gnueabihf/)
